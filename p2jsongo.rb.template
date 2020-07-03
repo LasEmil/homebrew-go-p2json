@@ -1,7 +1,7 @@
 require 'rbconfig'
-class Go-P2json < Formula
+class P2jsongo < Formula
   desc ""
-  homepage "https://github.com/LasEmil/go-p2json"
+  homepage "https://github.com/LasEmil/p2jsongo"
   version "{{.Version}}"
 
   if Hardware::CPU.is_64_bit?
@@ -9,10 +9,10 @@ class Go-P2json < Formula
     when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
       :windows
     when /darwin|mac os/
-      url "https://github.com/LasEmil/go-p2json/releases/download/v{{.Version}}/{{.Mac64.FileName}}"
+      url "https://github.com/LasEmil/p2jsongo/releases/download/v{{.Version}}/{{.Mac64.FileName}}"
       sha256 "{{.Mac64.Hash}}"
     when /linux/
-      url "https://github.com/LasEmil/go-p2json/releases/download/v{{.Version}}/{{.Linux64.FileName}}"
+      url "https://github.com/LasEmil/p2jsongo/releases/download/v{{.Version}}/{{.Linux64.FileName}}"
       sha256 "{{.Linux64.Hash}}"
     when /solaris|bsd/
       :unix
@@ -24,10 +24,10 @@ class Go-P2json < Formula
     when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
       :windows
     when /darwin|mac os/
-      url "https://github.com/LasEmil/go-p2json/releases/download/v{{.Version}}/{{.Mac386.FileName}}"
+      url "https://github.com/LasEmil/p2jsongo/releases/download/v{{.Version}}/{{.Mac386.FileName}}"
       sha256 "{{.Mac386.Hash}}"
     when /linux/
-      url "https://github.com/LasEmil/go-p2json/releases/download/v{{.Version}}/{{.Linux386.FileName}}"
+      url "https://github.com/LasEmil/p2jsongo/releases/download/v{{.Version}}/{{.Linux386.FileName}}"
       sha256 "{{.Linux386.Hash}}"
     when /solaris|bsd/
       :unix
@@ -37,11 +37,11 @@ class Go-P2json < Formula
   end
 
   def install
-    bin.install "go-p2json"
+    bin.install "p2jsongo"
   end
 
   test do
-    system "go-p2json"
+    system "p2jsongo"
   end
 
 end
