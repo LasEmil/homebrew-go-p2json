@@ -2,18 +2,18 @@ require 'rbconfig'
 class P2jsongo < Formula
   desc ""
   homepage "https://github.com/LasEmil/p2jsongo"
-  version "0.0.3"
+  version "0.0.4"
 
   if Hardware::CPU.is_64_bit?
     case RbConfig::CONFIG['host_os']
     when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
       :windows
     when /darwin|mac os/
-      url "https://github.com/LasEmil/p2jsongo/releases/download/v0.0.3/p2jsongo_0.0.3_darwin_amd64.zip"
-      sha256 "32ca57c198f836c3ccd07e60c1c6950af638ee5601f0f21f2ef34792a80fe06d"
+      url "https://github.com/LasEmil/p2jsongo/releases/download/v0.0.4/p2jsongo_0.0.4_darwin_amd64.zip"
+      sha256 "8e3ec7fdfbf4fe44eeeb730c73497e5d787f61c58c9b3f55bccf479af4068a98"
     when /linux/
-      url "https://github.com/LasEmil/p2jsongo/releases/download/v0.0.3/p2jsongo_0.0.3_linux_amd64.tar.gz"
-      sha256 "ffbea050f61ff7c9591f8c08aa64153107bb963f8a3d13b15b035922d0b64231"
+      url "https://github.com/LasEmil/p2jsongo/releases/download/v0.0.4/p2jsongo_0.0.4_linux_amd64.tar.gz"
+      sha256 "a0b61d06f20844ee23a5818080fda9cb069a0d0aa9ee6486be2ff4910c2e55eb"
     when /solaris|bsd/
       :unix
     else
@@ -24,11 +24,11 @@ class P2jsongo < Formula
     when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
       :windows
     when /darwin|mac os/
-      url "https://github.com/LasEmil/p2jsongo/releases/download/v0.0.3/p2jsongo_0.0.3_darwin_386.zip"
-      sha256 "6b67b34dd0b9010a6572ac8897cda97dbf10e707a7ab84796bd2869088a52e48"
+      url "https://github.com/LasEmil/p2jsongo/releases/download/v0.0.4/p2jsongo_0.0.4_darwin_386.zip"
+      sha256 "b26fc0f294379a56efe9aefecfaa095e2c4b368b2a8b6779959896578771362b"
     when /linux/
-      url "https://github.com/LasEmil/p2jsongo/releases/download/v0.0.3/p2jsongo_0.0.3_linux_386.tar.gz"
-      sha256 "ed464fc16d3c239c3241728b2601ed0fc806338ed78a38623d60214b1fe7f798"
+      url "https://github.com/LasEmil/p2jsongo/releases/download/v0.0.4/p2jsongo_0.0.4_linux_386.tar.gz"
+      sha256 "cc1821f00402e535048d4300c64fdba6444573fc87a4e923c2669ca461ca0d41"
     when /solaris|bsd/
       :unix
     else
